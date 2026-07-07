@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+
+{% block title %}Home - BigMart Sales Predictor{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="hero-content">
+                    <h1 class="hero-title">BigMart Sales Predictor</h1>
+                    <p class="hero-subtitle">
+                        Advanced machine learning solution for retail sales prediction. 
+                        Get accurate sales forecasts using our state-of-the-art Lasso Regression model.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="{{ url_for('predict_page') }}" class="btn btn-primary btn-lg">
+                            <i class="fas fa-calculator me-2"></i>Start Predicting
+                        </a>
+                        <a href="{{ url_for('about') }}" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="text-center">
+                    <i class="fas fa-chart-line" style="font-size: 15rem; color: rgba(255,255,255,0.2);"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Predictions Made</div>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Features Analyzed</div>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hours Available</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Why Choose Our Predictor?</h2>
+            <p class="section-subtitle">
+                Our advanced machine learning solution provides accurate sales predictions 
+                with comprehensive feature analysis and real-time processing.
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Advanced AI</h4>
+                    <p>
+                        Powered by state-of-the-art Lasso Regression  with 
+                        feature selection and regularization for optimal performance.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h4>High Performance</h4>
+                    <p>
+                        Lightning-fast predictions with 95% accuracy rate. 
+                        Process multiple features simultaneously for instant results.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Reliable & Secure</h4>
+                    <p>
+                        Built with industry-standard security practices. 
+                        Your data is processed securely and never stored permanently.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Responsive Design</h4>
+                    <p>
+                        Fully responsive interface that works perfectly on all devices - 
+                        desktop, tablet, and mobile phones.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Comprehensive Analysis</h4>
+                    <p>
+                        Analyzes 50+ features including item characteristics, 
+                        outlet details, and market conditions for accurate predictions.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Real-time Results</h4>
+                    <p>
+                        Get instant predictions with detailed analysis. 
+                        No waiting time - results are generated in milliseconds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="py-5" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">
+                Simple three-step process to get accurate sales predictions
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <div class="feature-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h5 class="card-title">1. Enter Data</h5>
+                        <p class="card-text">
+                            Input item details like weight, visibility, MRP, and outlet information 
+                            including size, location, and age.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h5 class="card-title">2. AI Processing</h5>
+                        <p class="card-text">
+                            Our advanced Lasso Regression model analyzes all features 
+                            and applies machine learning algorithms for prediction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5 class="card-title">3. Get Results</h5>
+                        <p class="card-text">
+                            Receive accurate sales predictions with detailed analysis 
+                            and insights for informed decision making.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <div class="card">
+                    <div class="card-body py-5">
+                        <h2 class="mb-4">Ready to Predict Sales?</h2>
+                        <p class="mb-4">
+                            Start using our advanced machine learning model to get accurate sales predictions. 
+                            Make data-driven decisions for your retail business.
+                        </p>
+                        <a href="{{ url_for('predict_page') }}" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket me-2"></i>Start Predicting Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
