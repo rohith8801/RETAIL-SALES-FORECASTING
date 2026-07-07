@@ -1,31 +1,7 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Virtual Environment
 .venv/
-venv/
-env/
-
-# Jupyter
+__pycache__/
+*.pyc
 .ipynb_checkpoints/
-
-# VS Code
 .vscode/
-
-# Environment Variables
 .env
-
-# macOS
-.DS_Store
-
-# Logs
-*.log
-
-# Build files
-build/
-dist/
-
-# Python cache
-*.egg-info/
+.git/
