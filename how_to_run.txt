@@ -1,0 +1,16 @@
+1. Check if Python exists ,elsewhere
+  Run this in CMD to find Python:  
+   where python
+   where python3
+
+2. After Installing Python, Run These Commands in CMD:
+    cd e:\BIGMART\app
+
+3. Then install dependencies:
+    python -m pip install -r requirements.txt
+
+4. Then run the app:
+    python app.py
+
+5. You should see:   * Running on http://127.0.0.1:5000
+    Open browser and go to: http://localhost:5000
